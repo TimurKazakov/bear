@@ -1,0 +1,181 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+
+    border: none;
+    text-transform: uppercase;
+    background: white url("../img/index-background-layer.jpg") 0 0 repeat;
+    color: black;
+
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    margin: 0;
+    padding: 0;
+}
+a{
+   text-decoration: none;
+    color: black;
+}
+
+header{
+    height: 73px;
+}
+
+.container{
+    width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
+
+}
+.header-navigation a{
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 26px 0;
+    vertical-align: center;
+}
+
+.header-wrapper{
+    background-color: black;
+    width: 100%;
+}
+.header-wrapper .container{
+    display: flex;
+    align-items: center;
+}
+.site-navigation li{
+    display: inline-block;
+    margin-right: 40px;
+
+
+}
+.main-header-logo{
+    margin-right: 40px;
+}
+.user-navigation{
+    margin-left: auto;
+}
+
+.current-page-description{
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.breadcrumbs{
+    margin: 34px 0 60px 0;
+    display: flex;
+}
+
+.breadcrumbs-item{
+    padding-right: 27px;
+    position: relative;
+
+
+}
+
+.breadcrumbs-item::after{
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url("../img/dark-romb.png") no-repeat;
+    position: absolute;
+    top: 4px;
+    right: 8px;
+
+}
+
+.breadcrumbs-item--current{
+    color: #c1bfbc;
+}
+
+.breadcrumbs-item--current:after{
+    content: "";
+    display: none;
+}
+
+.promoters{
+    width: 240px;
+    height: 590px;
+}
+.promoters legend{
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.promoters ul{
+
+    margin: 40px 0 0 0;
+}
+
+.promoters-list-item, .filter-option{
+
+    margin:0 0 30px 0;
+    padding:0 0 0 10px;
+}
+
+fieldset{
+    border: none;
+}
+.btn, button {
+    display: block;
+    font: inherit;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: black;
+    width: 100px;
+    height: 45px;
+    line-height: 45px;
+}
+.btn:hover,
+.btn:focus,
+.btn:active {
+    background-color: #663d15;
+}
+
+.product-group{
+    width: 720px;
+    height: 590px;
+}
+
+.index-columns{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.products-set-cards-item{
+    width: 220px;
+    height: 290px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid red;
+}
+
+.products-set-cards-item .product-image{
+    order: 0;
+    border: 1px solid green;
+}
+.product-description{
+    order: 1;
+    border: 1px solid yellow;
+}
+.btn-group{
+
+    order: 2;
+    border: 1px solid blue;
+}
