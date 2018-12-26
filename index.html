@@ -3,32 +3,34 @@
 <head>
     <link type="text/css" rel="stylesheet" href="css/index.css">
     <!--<link type="text/css" rel="stylesheet" href="css/normalize.css">-->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Barber Index
     </title>
 </head>
 <body>
 <header class="main-header">
+
     <nav class="main-navigation">
         <a class="main-header-logo "  href="www.yandex.ru">
             <img src="img/index-logo123.png" width="371" height="155"></a>
-
         <div class="main-navigation-wrapper">
+
             <div class="container">
-            <ul class="site-navigation">
-            <li><a href="#">Информация</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Прайс-лист</a></li>
-            <li><a href="#">Магазин</a></li>
-            <li><a href="#">Контакты</a></li>
-        </ul>
-        <ul class="user-navigation">
-            <li><a href="#" class="login-link">Вход</a></li>
-            <!--<li><img src="img/login.png" CLASS="login-link" width="14" height="14"></li>-->
-        </ul>
+                <ul class="site-navigation">
+                    <li><a href="#">Информация</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Прайс-лист</a></li>
+                    <li><a href="#">Магазин</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <ul class="user-navigation">
+                    <li><a href="#" class="login-link"><img src="img/login.png" CLASS="login-link" width="14" height="14">Вход</a></li>
+                </ul>
             </div>
         </div>
     </nav>
+
 </header>
 
 <main class="container">
@@ -38,7 +40,7 @@
 
     <section class="features">
 
-         <ul class="features-list">
+        <ul class="features-list">
             <li class="features-item">
                 <H2>Быстро</H2>
                 <img src="img/shape1.svg">
@@ -82,15 +84,15 @@
 
                 </li>
             </ul>
-            <a href="www.yandex.ru" class="btn">Все новости</a>
+            <a href="www.yandex.ru" class="btn btn--news">Все новости</a>
         </section>
         <section class="gallery">
             <h2>Фотогалерея</h2>
             <figure class="gallery-content">
                 <a href="#"><img src="img/Layer%2021.jpg"> </a>
             </figure>
-            <button class="btn gallery-btn left-btn">Вперед</button>
             <button class="btn gallery-btn left-btn">Назад</button>
+            <button class="btn gallery-btn right-btn">Вперед</button>
 
         </section>
     </div>
@@ -113,27 +115,29 @@
             <h2>Записаться</h2>
             <p class="registration-info">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
             <form class="app-form" method="post" action="https://echo.htmlacademy.ru">
-                <p class="app-item">
-                    <label  for="app-date">Дата</label>
-                    <input class="app-date" id="app-date" type="text" name="date" value="08.10.2017">
-                </p>
 
-                <p class="app-item">
-                    <label  for="app-time">Время</label>
-                    <input class="app-time" id="app-time" type="text" name="time" value="10:00">
-                </p>
+                <ul class="app-form__list">
+                    <li class="app-item">
+                        <label  for="app-date">Дата</label>
+                        <input class="app-date" id="app-date" type="text" name="date" value="08.10.2017">
+                    </li>
 
-                <p class="app-item">
-                    <label  for="app-name">Ваше имя</label>
-                    <input class="app-name" id="app-name" type="text" name="name" value="Борода">
-                </p>
+                    <li class="app-item">
+                        <label  for="app-time">Время</label>
+                        <input class="app-time" id="app-time" type="text" name="time" value="10:00">
+                    </li>
 
-                <p class="app-item">
-                    <label  for="app-tel">Телефон</label>
-                    <input class="app-tel" id="app-tel" type="tel" name="tel" value="+7 123 456-78-90">
-                </p>
+                    <li class="app-item">
+                        <label  for="app-name">Ваше имя</label>
+                        <input class="app-name" id="app-name" type="text" name="name" value="Борода">
+                    </li>
 
-                <input type="submit" class="btn" value="Отправить">
+                    <li class="app-item">
+                        <label  for="app-tel">Телефон</label>
+                        <input class="app-tel" id="app-tel" type="tel" name="tel" value="+7 123 456-78-90">
+                    </li>
+                </ul>
+                <input type="submit" class="btn btn--submit" value="Отправить">
 
             </form>
         </section>
@@ -144,25 +148,24 @@
 </main>
 <footer class="main-footer">
     <div class="container">
-    <p class="footer-contacts">
-        Барбершоп "Борода" <br>
-        Адрес бла бла <br>
-        <a href="#" class="found-us"> Как нас найти</a> <br>
-        Телефон
-    </p>
-
+        <p class="footer-contacts">
+            Барбершоп "Борода" <br>
+            Адрес бла бла <br>
+            <a href="#" class="found-us"> Как нас найти</a> <br>
+            Телефон
+        </p>
         <div class="footer-social">
             <p>Давайте дружить</p>
-    <ul class="social">
-        <li><a class="social-vk" href="#">ВК</a></li>
-        <li><a class="social-fb" href="#">Facebook</a></li>
-        <li><a class="social-inst" href="#">Instagram</a></li>
-    </ul>
+            <ul class="social">
+                <li><a class="social-vk" href="#">ВК</a></li>
+                <li><a class="social-fb" href="#">Facebook</a></li>
+                <li><a class="social-inst" href="#">Instagram</a></li>
+            </ul>
         </div>
 
-    <p class="copyright">Разработано <br>
-        <a href="#">by Me</a>
-    </p>
+        <p class="copyright">Разработано <br>
+            <a href="#">by Me</a>
+        </p>
     </div>
 </footer>
 
@@ -196,12 +199,12 @@
             <label  for="password-field">Пароль</label>
             <input class="modal-pass" id="password-field" type="password" name="tel" value="Пароль">
         </p>
-<label><input type="checkbox">Запомните меня</label>
+        <label><input type="checkbox">Запомните меня</label>
 
         <a href="#" class="forgot-password">Я забыл пароль!</a>
         <input type="submit" class="btn" value="Войти">
     </form>
- <button class="modal-exit">Закрыть</button>
+    <button class="modal-exit">Закрыть</button>
 </section>
 
 <section class="modal modal-map" >

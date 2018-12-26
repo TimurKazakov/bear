@@ -1,4 +1,4 @@
-<!DOCTYPE html>]
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,33 +8,43 @@
 <body class="inner-page">
 <header class="main-header">
     <nav class="header">
-        <ul class="main-navigation"></ul>
-        <li>   <a href="#">Информация</a></li>
-        <li>   <a href="#">Новости</a></li>
-        <li>   <a href="#">Прайс-лист</a></li>
-        <li>   <a href="#">Магазин</a></li>
-        <li>   <a href="#">контакты</a></li>
-        <li>   <img src="#" CLASS="image-login"></li>
-        <li>   <a href="#">Вход</a></li>
-        </ul>
+        <div class="container">
+
+            <a class="main-header-logo "  href="www.yandex.ru">
+                <img src="img/inner-page-logo.svg" width="111" height="24"></a>
+
+                <ul class="site-navigation">
+                    <li><a href="#">Информация</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Прайс-лист</a></li>
+                    <li class="header__current-page"><a href="#">Магазин</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <ul class="user-navigation">
+                    <li><a href="#" class="login-link"> <img src="img/login.png" CLASS="login-link" width="14" height="14"> Вход</a></li>
+                </ul>
+
+        </div>
     </nav>
 </header>
-<main class="item-main">
+<main class="item-main container">
+    <h1 class="item-description"> Набор для путешествий "Baxter of California"</h1>
     <ul class="breadcrumbs">
         <li class="bread item">
             <a href="index.html">Главная</a>
         </li>
         <li class="bread item">
-            <a href="shop.html">Мгазин</a>
+            <a href="shop.html">Магазин</a>
         </li>
-        <li class="breadcrumbs-current">Средства для ухода</li>
+        <li>
+            <a href="#">Средства для ухода</a>
+        </li>
+        <li class="breadcrumbs-current">Набор для путешествий "Baxter of California"</li>
     </ul>
-
+<div class="main__item-column">
     <section class="images">
+        <img src="img/item-large.png" width="460" height="640">
 
-           <p>
-            <img src="img/item-large.png" width="640" height="500">
-           </p>
            <ul>
          <li>  <img src="img/item-pic1.png" height="150" width="150" alt="другое фото"></li>
          <li>  <img src="img/item-pic2.png" height="150" width="150" alt="другое фото"></li>
@@ -45,10 +55,13 @@
 
     <section class="product-info">
         <h2 class="visually-hidden">Описание товара</h2>
-      <p class="product-availlabity">Есть в наличии</p>
+        <div class="item-description__wrapper">
+        <p class="product-availlabity">Есть в наличии</p>
         <p class="product-article">Артикул: dexter-ae</p>
-        <p> Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+        </div>
+        <p class="product-description"> Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
 
+        <label class="price-label">2980 Р<button class="price-button">Купить</button> </label>
                 <h3>В набор входят:</h3>
                 <ul>
                     <li>Средство для умывания (50 мл)</li>
@@ -63,25 +76,27 @@
 
 
     </section>
+</div>
 </main>
-<footer>
+<footer class="main-footer">
+    <div class="container">
     <p>
         Барбершоп "Борода" <br>
         Адрес бла бла <br>
         <a href="#"> Как нас найти</a> <br>
         Телефон
     </p>
-    <p>Давайте дружить</p>
+    <div><p>Давайте дружить</p>
     <nav class="social">
         <a class="social-vk" href="#">ВК</a>
         <a class="social-fb" href="#">Facebook</a>
         <a class="social-inst" href="#">Instagram</a>
     </nav>
-
+    </div>
     <p>Разработано <br>
         <a href="#">by Me</a>
     </p>
-
+    </div>
 </footer>
 </body>
 </html>
